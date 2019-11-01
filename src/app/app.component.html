@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+	<div class="container">
+		Input file demo
+	</div>
+</mat-toolbar>
+<div class="container mt-5">
+	<div class="row">
+		<div class="col-12">
+			<pre>Configuration - fileAccept: '*', fileLimit: 4</pre>
+			<input-file placeholder="Drop files below!"></input-file>
+		</div>
+
+		<div class="col-12">
+			<pre>Configuration - fileAccept: 'image/*', fileLimit: 2</pre>
+			<input-file fileAccept="image/*" fileLimit="2" placeholder="Pictures"></input-file>
+		</div>
+
+		<div class="col-12">
+			<pre>Configuration - fileAccept: 'image/*', fileLimit: 2, linkEnabled: true</pre>
+			<input-file fileAccept="image/*" fileLimit="2" [linkEnabled]="true" placeholder="Could be a link"></input-file>
+		</div>
+
+		<div class="col-12">
+			<pre>Configuration - disabled: true</pre>
+			<input-file [disabled]="true"></input-file>
+		</div>
+	</div>
+</div>
